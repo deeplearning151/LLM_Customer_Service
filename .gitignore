@@ -1,0 +1,24 @@
+# Environment and secrets
+.env
+*.env
+!.env.example
+
+# Python cache and build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# Local data exports and model files
+*.dump
+neo4j.dump
+models/
+
+# Logs
+*.log
