@@ -153,7 +153,7 @@ EMBEDDING_MODEL=./models/bge-base-zh-v1.5
 - `MYSQL_*`：电商订单、物流、售后动作连接 MySQL 使用。
 - `EMBEDDING_MODEL`：本地向量模型路径；如果使用 `sentence-transformers`，需要准备对应模型文件。
 
-`.env` 用于保存本地真实密钥，请不要提交到 GitHub。
+`.env` 用于保存本地真实密钥。
 
 ## 运行电商客服 Demo
 
@@ -521,23 +521,3 @@ class ActionExample(Action):
         return ActionResult(responses=[{"text": "示例动作已执行"}])
 ```
 
-
-## 安全说明
-
-请不要把以下文件提交到 GitHub：
-
-- `.env`
-- `neo4j.dump`
-- 数据库 dump
-- 本地模型目录 `models/`
-- Python 缓存 `__pycache__/`、`*.pyc`
-- 构建产物 `*.egg-info/`、`build/`、`dist/`
-- 私钥、证书、访问令牌
-
-如果仓库中保留 `.gitignore`，建议忽略这些内容。提交前建议执行：
-
-```powershell
-git status --short --ignored
-```
-
-建议在提交前使用你信任的 secret scanner 再做一次检查。如果真实密钥曾经出现在本地文件中，建议到对应平台控制台重置该密钥。
