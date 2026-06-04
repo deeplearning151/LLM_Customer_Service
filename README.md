@@ -2,7 +2,7 @@
 
 一个面向教学和原型验证的 LLM 智能客服框架。提供对话状态管理、Flow 流程编排、LLM 指令生成、策略选择、RAG/GraphRAG 检索增强、REST/WebSocket 服务以及命令行工具。仓库中的 `ecs_demo` 是一个电商客服示例，覆盖订单、物流、售后和商品知识检索等典型场景。
 
-> 注意：请不要提交 `.env`、`neo4j.dump`、`__pycache__`、`*.pyc`、`*.egg-info` 等本地密钥、数据导出和生成文件。运行项目时请基于 `ecs_demo/.env.example` 自行配置本地环境变量。
+> 注意：运行项目时请基于 `ecs_demo/.env.example` 自行配置本地环境变量。
 
 ## 目录
 
